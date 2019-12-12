@@ -46,8 +46,12 @@ a:hover{
 }
 /* solely changing colors and styling so that the top 
 of the main page looks neat and acceptable */
+#main h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px
+}
 #showcase{
-    background-image:url('https://www.du.edu/sites/g/files/lmucqz251/files/styles/hero_image_1200_x_476/public/2018-03/hero-image.jpg?itok=4NCCmOVM');
+    background-image:url('https://www.colorado.edu/geography/sites/default/files/styles/hero/public/block/cu-aerialphotocampus.jpg?itok=2HpC8fpt');
     background-position: center left;
     min-height: 300px;
     margin-bottom: 30px;
@@ -173,6 +177,29 @@ makes the browser bigger/smaller */
     margin: 20px 0;
 }
 
+.box-2 h1{
+    position: absolute;
+    top: 600px;
+    right: 200px;
+}
+
+.box-2 h3{
+    position: absolute;
+    top: 900px;
+    right: 450px;
+} 
+
+.box-2 h4{
+    position: absolute;
+    top: 1200px;
+    right: 600px;
+}
+
+.box-2 h5{
+    position: absolute;
+    top: 1200px;
+    right: 200px;
+}
 .box-2 h2{
     text-align: center;
 }

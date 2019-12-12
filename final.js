@@ -35,6 +35,7 @@ function onSubmit(e) {
         emailInput.value = ''
     }
 }
+// ^ works for "add user"
 // const btn = document.querySelector('.btn');
 
 // btn.addEventListener('click', (e) => {
