@@ -20,91 +20,424 @@
                 <li><a href="final.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="mycolleges.html">My Colleges</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Fun</a></li>
             </ul>
         </div>
     </nav>
-
-    <section>
-        <form class="container">
-            <input type="checkbox" value="cuboulder">CU Boulder</input>
-            <br>
-            <input type="checkbox" value="schoolofmines">School of Mines</input>
-            <br>
-            <input type="checkbox" value="csu">CSU</input>
-            <br>
-            <input type="checkbox" value="villanova">Villanova</input>
-            <br>
-            <input type="checkbox" value="montana">Montana State University</input>
-            <br>
-            <input type="checkbox" value="utah">University of Utah</input>
-            <br>
-            <input type="checkbox" value="texastech">Texas Tech</input>
-            <br>
-            <input type="checkbox" value="texas">University of Texas</input>
-            <br>
-            <input type="checkbox" value="">Michigan State University</input>
-            <br>
-            <input type="checkbox" value="">Harvard University</input>
-            <br>
-            <input type="checkbox" value="">Texas A&M</input>
-            <br>
-            <input type="checkbox" value="">University of Oklahoma</input>
-            <br>
-            <input type="checkbox" value="">Ohio State University</input>
-            <br>
-            <input type="checkbox" value="">University of Arizona</input>
-            <br>
-            <input type="checkbox" value="">University of Miami</input>
-            <br>
-            <input type="checkbox" value="">BYU</input>
-            <br>
-            <input type="checkbox" value="">University of Wyoming</input>
-            <br>
-            <input type="checkbox" value="">UC Berkley</input>
-            <br>
-            <input type="checkbox" value="">Standford University</input>
-            <br>
-            <input type="checkbox" value="">UC Irvine</input>
-            <br>
-            <input type="checkbox" value="">University of North Carolina</input>
-            <br>
-            <input type="checkbox" value="">UCLA</input>
-            <br>
-            <input type="checkbox" value="">New York University</input>
-            <br>
-            <input type="checkbox" value="">University of Washington</input>
-            <br>
-            <input type="checkbox" value="">University of Alabama</input>
-            <br>
-            <input type="checkbox" value="">University of Oregon</input>
-            <br>
-            <input type="checkbox" value="">University of Kansas</input>
-            <br>
-            <input type="checkbox" value="">Louisiana State University</input>
-            <br>
-            <input type="checkbox" value="">University of Virginia</input>
-            <br>
-            <input type="checkbox" value="">University of Missouri</input>
-            <br>
-            <input type="checkbox" value="">University of Minnesota</input>
-            <br>
-            <input type="checkbox" value="">University of Iowa</input>
-            <br>
-            <input type="checkbox" value="">Drake University</input>
-            <br>
-            <input type="checkbox" value="">Georgia Tech</input>
-            <br>
-            <input type="checkbox" value="">Columbia University</input>
-            <br>
-            <input type="checkbox" value="">MIT</input>
-            <br>
-            <input type="checkbox" value="">University of Florida</input>
-            <br>
-            <input type="checkbox" value="">University of Kentucky</input>
-            <br>
-            <input type="checkbox" value="">Yale University</input>
+    <div class="container" id="list">
+        <header >
+            <h1>Select all the colleges you would like to apply to:</h1>
+            <p>Remember the more colleges you pick, the more applications you will have to write.
+                Try to select 5-10. <em>Means early action</em> and <strong>means early decision</strong>.
+                Once done, click the "My Colleges" button and your deadlines will appear next to the colleges you selected.
+            </p>
+        </header>
+        <button class="js-clear" name="clearBtn">Clear <span></span> checked</button>
+        <form id="college-form">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><input class="select-all" type="checkbox"></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="1" value="cu"/>
+                                <label class="title" for="1">CU Boulder</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| October 15th (Free App Day) | <em>November 15th </em> | January 15th |</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="2" value="mines"/>
+                                <label class="title" for="2">School of Mines</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| November 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="3" value="csu"/>
+                                <label class="title" for="3">CSU</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>December 1st</em> | Febuary 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="4" value="villanova"/>
+                                <label class="title" for="4">Villanova</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <strong><em>November 1st</em></strong> | January 15th |</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="5" value="montana"/>
+                                <label class="title" for="5">Montana State University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| July 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="6" value="utah"/>
+                                <label class="title" for="6">University of Utah</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | <em>Febuary 1st</em> | April 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="7" value="texastech"/>
+                                <label class="title" for="7">Texas Tech</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| August 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="8" value="texas"/>
+                                <label class="title" for="8">University of Texas</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| December 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="9" value="msu"/>
+                                <label class="title" for="9">Michigan State University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| May 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="10" value="harvard"/>
+                                <label class="title" for="10">Harvard University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | January 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="11" value="a&m"/>
+                                <label class="title" for="11">Texas A&M</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| December 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="12" value="oklahoma"/>
+                                <label class="title" for="12">University of Oklahoma</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| Febuary 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="13" value="ohio"/>
+                                <label class="title" for="13">Ohio State University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | Febuary 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="14" value="arizona"/>
+                                <label class="title" for="14">University of Arizona</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| May 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="15" value="miami"/>
+                                <label class="title" for="15">University of Miami</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em><strong>November 1st</strong></em> | January 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="16" value="byu"/>
+                                <label class="title" for="16">BYU</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| December 15th |</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="17" value="wyoming"/>
+                                <label class="title" for="17">University of Wyoming</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| July 28th |</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="18" value="berkley"/>
+                                <label class="title" for="18">UC Berkley</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| November 1st – 30th |</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="19" value="stanford"/>
+                                <label class="title" for="19">Stanford University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | January 2nd |</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="20" value="irvine"/>
+                                <label class="title" for="20">UC Irvine</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| November 30th |</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="21" value="unc"/>
+                                <label class="title" for="21">University of North Carolina</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| October 17th | January 15th |</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="22" value="ucla"/>
+                                <label class="title" for="22">UCLA</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| November 30th |</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="23" value="nyu"/>
+                                <label class="title" for="23">New York University</label>
+                            </div>
+                            <td class="deadline" style="display: none;">| <strong>November 1st</strong> | <strong>January 1st</strong> | January 1st |</td>
+                        </td>
+                    </tr><tr>
+                        <td>24</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="24" value="washington"/>
+                                <label class="title" for="24">University of Washington</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| November 15th |</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="25" value="alabama"/>
+                                <label class="title" for="25">University of Alabama</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| June 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="26" value="oregon"/>
+                                <label class="title" for="26">University of Oregon</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | January 15th |</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="27" value="kansas"/>
+                                <label class="title" for="27">University of Kansas</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| July 29th |</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="28" value="lsu"/>
+                                <label class="title" for="28">Louisiana State University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| Febuary 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="29" value="virginia"/>
+                                <label class="title" for="29">University of Virginia</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <strong>October 15th</strong> | <em>November 1st</em> | January 1st</td>
+                    </tr>
+                        <td>30</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="30" value="missouri"/>
+                                <label class="title" for="30">University of Missouri</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| June 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="31" value="minnessota"/>
+                                <label class="title" for="31">University of Minnessota</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | January 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="32" value="iowa"/>
+                                <label class="title" for="32">University of Iowa</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| May 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="33" value="drake"/>
+                                <label class="title" for="33">Drake University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| July 22nd |</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="34" value="georgia"/>
+                                <label class="title" for="34">Georgia Tech</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>October 17th</em> | January 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="35" value="columbia"/>
+                                <label class="title" for="35">Columbia University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <strong>November 1st</strong> | January 1st |</td>
+                    </tr>
+                        <td>36</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="36" value="mit"/>
+                                <label class="title" for="36">MIT</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | January 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="37" value="florida"/>
+                                <label class="title" for="37">University of Florida</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| November 1st |</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="38" value="kentucky"/>
+                                <label class="title" for="38">University of Kentucky</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>December 1st</em> | Febuary 15th |</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>
+                            <div class="colleges">
+                                <input type="checkbox" name="uni" id="39" value="yale"/>
+                                <label class="title" for="39">Yale University</label>
+                            </div>
+                        </td>
+                        <td class="deadline" style="display: none;">| <em>November 1st</em> | January 2nd |</td>
+                    </tr>
+                </tbody>
+            </table>
+            <input class="btn" type="submit" value="My Colleges">
         </form>
-    </section>
+    </div>
+
+    <footer id="main-footer">
+            <p>Copyright @ 2019; APCSP: Dante Amicarella</p>
+    </footer>
+    <script src = "mycolleges.js"></script>
 </body>
 </html>
